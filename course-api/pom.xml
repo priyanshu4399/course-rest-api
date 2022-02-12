@@ -4,4 +4,28 @@
   <artifactId>course-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Course Api</name>
+  
+  <!--Step 1 :  Adding spring-boot-starter-parent project as Parent so that we get default configurations-->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.6.3</version>
+  </parent>
+  
+  <!-- Step 2 : Add dependencies-->
+  <dependencies>
+    <!--This dependency pull all web related jars-->
+  	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  </dependencies>
+  
+  <!--Add Properties-->
+  <properties>
+  	<java.version>17</java.version>
+  </properties>
+  
 </project>
+
+
